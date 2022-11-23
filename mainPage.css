@@ -20,11 +20,12 @@ video {
 #menu_bar_left {
   position: absolute;
   display: none;
-  width: 20%;
-  height: 80%;
+  width: 25%;
+  height: 10%;
   margin-top: 6%;
-  margin-left: 0px;
-  background-color: white;
+  margin-left: 1%;
+  background-image: url(renk-gecis.jpg);
+  opacity: 0.9;
   border-radius: 20px;
 }
 .categories ul {
@@ -38,9 +39,67 @@ video {
   font-size: small;
   margin-left: -2em;
 }
+.list_no_underline {
+  /* ozel isim verilecek */
+  list-style: none;
+  font-family: "Rockwell", Rockwell, SERIF;
+  text-shadow: 2px 2px 2px #eeee;
+}
+.list_no_underline li {
+  margin-left: -1em;
+  margin-bottom: 1vh;
+}
 #menu_bar_left ul li a {
   text-decoration: none;
   color: black;
+}
+#show_kadin_products {
+  position: absolute;
+  display: none;
+  width: 25%;
+  height: 50%;
+  margin-top: 12%;
+  margin-left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+  background-image: url(kadin-giyim.png);
+}
+#show_erkek_products {
+  position: absolute;
+  display: none;
+  width: 25%;
+  height: 50%;
+  margin-top: 12%;
+  margin-left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+  background-image: url(erkek-giyim.jpg);
+}
+#show_cocuk_products {
+  position: absolute;
+  display: none;
+  width: 25%;
+  height: 50%;
+  margin-top: 12%;
+  margin-left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+  background-image: url(cocuk-giyim.jpg);
+}
+#show_guzellik_products {
+  position: absolute;
+  display: none;
+  width: 25%;
+  height: 50%;
+  margin-top: 12%;
+  margin-left: 1%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: auto;
+  background-image: url(guzellik-urunleri.jpg);
 }
 header {
   position: fixed;
@@ -52,22 +111,21 @@ header {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100%;
+
   /* background-color: blue; */
-  height: 50px;
+
   background: transparent;
 }
 .header1 {
   display: flex;
   justify-content: flex-start;
 }
-.header1 img {
-  width: 7vh;
-  opacity: 0.7;
+
+.header1 i {
+  margin-top: 1vh;
+  margin-left: 2vh;
 }
-.header1 button {
-  border-radius: 8px;
-}
+
 #header2 {
   display: flex;
   justify-content: flex-start;
@@ -94,7 +152,9 @@ header {
   margin-top: 2vh;
   text-shadow: 2px 2px 2px #000000;
 }
-
+#header2 p {
+  text-shadow: 1px 1px 2px #eeee;
+}
 .long_main_page {
   width: 100%;
   height: 100%;

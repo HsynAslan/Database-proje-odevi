@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DB Proje Ödevi</title>
     <link rel="stylesheet" href="mainPage.css" />
+    <script
+      src="https://kit.fontawesome.com/d497048b92.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <video autoplay muted loop>
@@ -19,19 +23,93 @@
     <div id="menu_bar_left">
       <div class="categories">
         <ul>
-          <li><a href="#">Kadın</a></li>
-          <li><a href="#">Erkek</a></li>
-          <li><a href="#">Çocuk</a></li>
-          <li><a href="#">Güzellik Ürünleri</a></li>
+          <li><a href="#" onclick="show_kadin()">Kadın</a></li>
+          <li><a href="#" onclick="show_erkek()">| Erkek</a></li>
+          <li><a href="#" onclick="show_cocuk()">| Çocuk</a></li>
+          <li>
+            <a href="#" onclick="show_makyaj()">| Güzellik Ürünleri</a>
+          </li>
         </ul>
       </div>
     </div>
+
+    <div id="show_kadin_products">
+      <ul class="list_no_underline">
+        <li>Yeni Gelenler</li>
+        <li>Çok Satanlar</li>
+        <li>Basic</li>
+        <li>Kaban</li>
+        <li>Ceket</li>
+        <li>Blazer</li>
+        <li>Yelek</li>
+        <li>Elbise</li>
+        <li>Triko</li>
+        <li>Gömlek</li>
+        <li>Top</li>
+        <li>Thirt</li>
+        <li>Sweatshirt</li>
+        <li>Pantalon</li>
+        <li>Jean</li>
+        <li>Etek</li>
+        <li>Takım Elbise</li>
+        <li>Ayakkabı</li>
+        <li>Çanta</li>
+        <li>Aksesuar</li>
+      </ul>
+    </div>
+
+    <div id="show_erkek_products">
+      <ul class="list_no_underline">
+        <li>Basic</li>
+        <li>Mont</li>
+        <li>Kaban</li>
+        <li>Blazer</li>
+        <li>Yelek</li>
+        <li>Sweatshirt</li>
+        <li>Kazak</li>
+        <li>Pantalon</li>
+        <li>Jean</li>
+        <li>Gömlek</li>
+        <li>Tshirt</li>
+        <li>Eşofman Takım</li>
+        <li>Ayakkabı</li>
+        <li>Çanta</li>
+      </ul>
+    </div>
+
+    <div id="show_cocuk_products">
+      <ul class="list_no_underline">
+        <li style="font-weight: bold">Kız</li>
+        <li>6-14 Yaş</li>
+        <li>6 ay-5 yaş</li>
+        <li>0-6 Ay</li>
+        <br />
+        <li style="font-weight: bold">Erkek</li>
+        <li>6-14 Yaş</li>
+        <li>6 ay-5 yaş</li>
+        <li>0-6 Ay</li>
+      </ul>
+    </div>
+
+    <div id="show_guzellik_products">
+      <ul class="list_no_underline">
+        <li>Parfüm</li>
+        <li>Dudak</li>
+        <li>Göz</li>
+        <li>Yüz</li>
+        <li>Oje</li>
+        <li>Fırça</li>
+      </ul>
+    </div>
+
     <header>
       <div class="headers">
-        <div class="header1">
-          <button onclick="showElement()">
-            <img src="menu_bar_png.png" alt="menu_bar_png" />
-          </button>
+        <div class="header1" style="cursor: pointer">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 40px"
+            onclick="showElement()"
+          ></i>
         </div>
 
         <div id="header2">
