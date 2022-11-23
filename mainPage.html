@@ -8,13 +8,37 @@
     <link rel="stylesheet" href="mainPage.css" />
   </head>
   <body>
+    <video autoplay muted loop>
+      <source
+        src="x2mate.com-Zara Woman Campaign _ Spring Summer 2016-(1080p) (online-video-cutter.com).mp4"
+        type="video/mp4"
+      />
+
+      Your browser does not support the video tag.
+    </video>
+    <div id="menu_bar_left">
+      <div class="categories">
+        <ul>
+          <li><a href="#">Kadın</a></li>
+          <li><a href="#">Erkek</a></li>
+          <li><a href="#">Çocuk</a></li>
+          <li><a href="#">Güzellik Ürünleri</a></li>
+        </ul>
+      </div>
+    </div>
     <header>
       <div class="headers">
         <div class="header1">
-          <img src="menu_bar_png.png" alt="menu_bar_png" />
+          <button onclick="showElement()">
+            <img src="menu_bar_png.png" alt="menu_bar_png" />
+          </button>
+        </div>
+
+        <div id="header2">
           <p>ZARA</p>
         </div>
-        <div class="header2">
+
+        <div class="header3">
           <a href="#">Ara</a>
           <a href="#">Giriş Yap</a>
           <a href="#">Yardım</a>
@@ -22,10 +46,13 @@
         </div>
       </div>
     </header>
-    <section class="long_main_page">
+
+    <!-- <section class="long_main_page">
       <div class="fixed_man_child_left"><p>Kadın</p></div>
       <div class="fixed_man_child_right"><p>Çocuk</p></div>
       <div class="fixed_bottom">bottom</div>
-    </section>
+    </section> -->
+
+    <script src="myHeader.js"></script>
   </body>
 </html>
