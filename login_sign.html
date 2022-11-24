@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DB Proje Ödevi</title>
+    <link rel="stylesheet" href="login_sign.css" />
+    <script
+      src="https://kit.fontawesome.com/d497048b92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source
+        src="x2mate.com-Zara Woman Campaign _ Spring Summer 2016-(1080p) (online-video-cutter.com).mp4"
+        type="video/mp4"
+      />
+
+      Your browser does not support the video tag.
+    </video>
+    <div id="menu_bar_left">
+      <div class="categories">
+        <ul>
+          <li><a href="#" onclick="show_kadin()">Kadın</a></li>
+          <li><a href="#" onclick="show_erkek()">| Erkek</a></li>
+          <li><a href="#" onclick="show_cocuk()">| Çocuk</a></li>
+          <li>
+            <a href="#" onclick="show_makyaj()">| Güzellik Ürünleri</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="show_kadin_products">
+      <ul class="list_no_underline">
+        <li>Yeni Gelenler</li>
+        <li>Çok Satanlar</li>
+        <li>Basic</li>
+        <li>Kaban</li>
+        <li>Ceket</li>
+        <li>Blazer</li>
+        <li>Yelek</li>
+        <li>Elbise</li>
+        <li>Triko</li>
+        <li>Gömlek</li>
+        <li>Top</li>
+        <li>Thirt</li>
+        <li>Sweatshirt</li>
+        <li>Pantalon</li>
+        <li>Jean</li>
+        <li>Etek</li>
+        <li>Takım Elbise</li>
+        <li>Ayakkabı</li>
+        <li>Çanta</li>
+        <li>Aksesuar</li>
+      </ul>
+    </div>
+
+    <div id="show_erkek_products">
+      <ul class="list_no_underline">
+        <li>Basic</li>
+        <li>Mont</li>
+        <li>Kaban</li>
+        <li>Blazer</li>
+        <li>Yelek</li>
+        <li>Sweatshirt</li>
+        <li>Kazak</li>
+        <li>Pantalon</li>
+        <li>Jean</li>
+        <li>Gömlek</li>
+        <li>Tshirt</li>
+        <li>Eşofman Takım</li>
+        <li>Ayakkabı</li>
+        <li>Çanta</li>
+      </ul>
+    </div>
+
+    <div id="show_cocuk_products">
+      <ul class="list_no_underline">
+        <li style="font-weight: bold">Kız</li>
+        <li>6-14 Yaş</li>
+        <li>6 ay-5 yaş</li>
+        <li>0-6 Ay</li>
+        <br />
+        <li style="font-weight: bold">Erkek</li>
+        <li>6-14 Yaş</li>
+        <li>6 ay-5 yaş</li>
+        <li>0-6 Ay</li>
+      </ul>
+    </div>
+
+    <div id="show_guzellik_products">
+      <ul class="list_no_underline">
+        <li>Parfüm</li>
+        <li>Dudak</li>
+        <li>Göz</li>
+        <li>Yüz</li>
+        <li>Oje</li>
+        <li>Fırça</li>
+      </ul>
+    </div>
+
+    <header>
+      <div class="headers">
+        <div class="header1" style="cursor: pointer">
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 40px"
+            onclick="showElement()"
+          ></i>
+        </div>
+
+        <div id="header2">
+          <p>ZARA</p>
+        </div>
+
+        <div class="header3">
+          <a href="#" id="search_button">Ara</a>
+          <!-- <a href="#">Giriş Yap</a> -->
+          <a href="index.html">Ana Sayfa</a>
+          <a href="#">Yardım</a>
+          <!-- <a href="#">Kayıt</a> -->
+        </div>
+      </div>
+    </header>
+
+    <section class="login_sign">
+      <div class="login">
+        <span class="login_sign_text">OTURUM AÇIN</span>
+        <input
+          type="email"
+          size="25px"
+          placeholder="E-POSTA ADRESİ"
+          class="login_input"
+        />
+        <input
+          type="password"
+          size="25px"
+          placeholder="PAROLA"
+          class="login_input"
+        />
+        <span class="forget_password">Parolanızı mı Unuttunuz ?</span>
+        <button class="login_sign_button"><span> Giriş Yap</span></button>
+      </div>
+      <div class="sign">
+        <span class="login_sign_text">KAYDOLUN</span>
+        <p>
+          HALA ZARA.COM HESABINIZ YOKSA, KAYIT FORMUNA ERİŞMEK İÇİN BU SEÇENEĞİ
+          KULLANIN.
+        </p>
+        <p>
+          BİZE BİLGİLERİNİZİ VERDİĞİNİZDE, ZARA.COM SİTESİNDEKİ ALIŞVERİŞİNİZ
+          DAHA HIZLI VE DAHA KEYİFLİ BİR DENEYİM OLACAK.
+        </p>
+        <button class="login_sign_button" onclick="location.href='sign.html'">
+          <span> HESAP OLUŞTUR</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- <section class="long_main_page">
+      <div class="fixed_man_child_left"><p>Kadın</p></div>
+      <div class="fixed_man_child_right"><p>Çocuk</p></div>
+      <div class="fixed_bottom">bottom</div>
+    </section> -->
+
+    <script src="myHeader.js"></script>
+  </body>
+</html>
