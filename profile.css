@@ -6,9 +6,9 @@ html {
 }
 body {
   /* background-image: url(zara-stall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
-  /* background-color: #eee; */
+    background-repeat: no-repeat;
+    background-size: cover; */
+  background-color: #222831;
 }
 a {
   text-decoration: none;
@@ -19,7 +19,7 @@ video {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  opacity: 0.5;
+  opacity: 0.1;
 }
 #menu_bar_left {
   position: absolute;
@@ -31,21 +31,17 @@ video {
   background-image: url(renk-gecis.jpg);
   opacity: 0.9;
   border-radius: 20px;
-  z-index: 10;
 }
-
 .categories ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 4vh;
-  z-index: 10;
 }
 #menu_bar_left ul li {
   list-style: none;
   font-size: small;
   margin-left: -2em;
-  z-index: 10;
 }
 .list_no_underline {
   /* ozel isim verilecek */
@@ -72,7 +68,6 @@ video {
   border-radius: 20px;
   overflow: auto;
   background-image: url(kadin-giyim.png);
-  z-index: 10;
 }
 #show_erkek_products {
   position: absolute;
@@ -85,7 +80,6 @@ video {
   border-radius: 20px;
   overflow: auto;
   background-image: url(erkek-giyim.jpg);
-  z-index: 10;
 }
 #show_cocuk_products {
   position: absolute;
@@ -98,7 +92,6 @@ video {
   border-radius: 20px;
   overflow: auto;
   background-image: url(cocuk-giyim.jpg);
-  z-index: 10;
 }
 #show_guzellik_products {
   position: absolute;
@@ -111,7 +104,6 @@ video {
   border-radius: 20px;
   overflow: auto;
   background-image: url(guzellik-urunleri.jpg);
-  z-index: 10;
 }
 header {
   position: fixed;
@@ -153,20 +145,16 @@ header {
 .header3 {
   width: 35%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 .header3 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
   font-size: 3vh;
   margin-right: 4vh;
   margin-top: 2vh;
-  text-shadow: 1px 1px 2px grey;
-}
-#search_button {
-  border-bottom: black;
-  border-bottom: 3px;
+  text-shadow: 2px 2px 2px #000000;
 }
 #header2 p {
   text-shadow: 1px 1px 2px #eeee;
@@ -176,66 +164,53 @@ header {
   height: 100%;
   /* background-color: green; */
 }
-
-.sign {
+.profile {
   position: absolute;
-  margin-top: 12%;
-  margin-left: 10%;
-  width: 70%;
-  height: 60%;
-}
-.sign_header_text {
+  width: 99%;
+  height: 80%;
+  margin-top: 8%;
+  margin-left: 0px;
   display: flex;
-  text-align: left;
+  flex-direction: column;
+}
+.adreslerim {
+  width: 100%;
+  height: 33.3%;
+}
+.kayitli-kartlarim {
+  width: 100%;
+  height: 33.3%;
+}
+.siparislerim {
+  width: 100%;
+  height: 33.3%;
+}
+.yazilar {
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  font-family: "Rockwell", Rockwell, SERIF;
+  color: aliceblue;
+  border: #000000;
 }
-#margin_left {
-  margin-left: 5vh;
-}
-input::placeholder {
-  font: 8px sans-serif;
-  z-index: 11;
-}
-.sign_input {
-  margin-top: 3vh;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  height: 4vh;
-  background-color: #eee;
-  border-top-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.3);
-  
-}
-.kurallar {
-  margin-top: 3vh;
-}
-input[type="checkbox"] {
-  transform: scale(1.5);
-  margin-bottom: 2vh;
-}
-.kural_aciklama {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-size: 10px;
-}
-.login_sign_button {
+.buttons {
+  width: 100%;
+  height: 70%;
   display: flex;
-  background-color: black;
-  margin-top: 4vh;
-  height: 5vh;
-  width: 37%;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  border-bottom:rgba(0, 0, 0, 1): ;
+  flex-direction: row;
+
+  flex-wrap: wrap;
 }
-.login_sign_button span {
-  color: #eee;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 13px;
+.button {
+  background-color: #666666;
+  height: 100%;
+  width: 10%;
+  margin-right: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  flex-wrap: wrap;
+  border: 2px solid grey;
+  transition: 0.9s;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: 0.9s;
 }
